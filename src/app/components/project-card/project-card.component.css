@@ -1,0 +1,76 @@
+.container {
+    margin: 10px;
+    font-size: larger;
+    padding-bottom: 25px;
+}
+
+.container > .project > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container > .title, .container > p {
+    color: var(--primary-color);
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.container > .caracteristicas {
+    color: var(--title-color);
+    margin: 25px 0;
+}
+
+.container > .tecnologias {
+    display: flex;
+    margin: 20px 0;
+}
+
+.container > .tecnologias > li {
+    width: 70px;
+    height: 70px;
+    border: 1px solid var(--title-color);
+    border-radius: 50%;
+    padding: 15px;  
+    margin-right: 10px;
+}
+
+.container > .tecnologias > li > img {
+    width: 100%;
+}
+
+.container > .options {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.container > .options > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.container > .options > .previa {
+    width: 60%;
+    border: 1px solid var(--title-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color .5s;
+}
+
+.container > .options > .previa:hover {
+    background-color: var(--title-color);
+    cursor: pointer;
+}
+
+.container > .options > .repositorio {
+    width: 40%;
+    text-align: center;
+}
+
+.container > .options > .repositorio:hover {
+    font-weight: bold;
+    cursor: pointer;
+}

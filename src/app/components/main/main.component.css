@@ -1,0 +1,46 @@
+.container {
+    color: var(--primary-color);
+    margin: 10px 10px 0 10px;
+}
+
+.container > h1 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.container > .description {
+    color: var(--title-color);
+    margin-bottom: 5px;
+}
+
+.container > .sociais > a > img {
+    height: 25px;
+    width: 25x;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+.container > button {
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.container > button > img {
+    width: 10px;
+    margin-left: 5px;
+}
+
+.container > .image-base {
+    width: 100%;
+}
+
+.container > .image-base > img {
+    width: 100%;
+    border-radius: 5px;
+    transform: translateY(65px);
+    margin-top: -30px;
+}

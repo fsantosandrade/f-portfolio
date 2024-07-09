@@ -1,0 +1,33 @@
+.container {
+    background-color: var(--secondary-bg-color);
+    margin: 30px 0;
+    padding: 0 10px;
+    padding-top: 100px;
+    
+}
+
+.container > h1 {
+    color: var(--primary-color);
+    font-weight: normal;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container > .skills {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.container > .skills > li {
+   width: 70px;
+   height: 70px;
+   border: 1px solid var(--title-color); 
+   padding: 15px;
+   border-radius: 50%;
+}
+
+.container > .skills > li > img {
+    width: 100%;
+}

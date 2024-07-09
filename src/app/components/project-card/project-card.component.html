@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="project">
+        <img [src]="photoProject" alt="project">
+    </div>
+    <h1 class="title">{{ nameProject }}</h1>
+    <p>{{ descProject }}</p>
+    <ul class="caracteristicas">
+        <li *ngFor="let carac of caracProject">{{ carac }}</li>
+    </ul>
+    <ul class="tecnologias">
+        <li *ngFor="let tec of tecProject"><img [src]="tec" alt=""></li>
+    </ul>
+    <div class="options">
+        <a [href]="[linkPage]" target="_blank" class="previa">PRÉVIA DO PROJETO</a>
+        <a [href]="[linkRepos]" target="_blank" class="repositorio">REPOSITÓRIO</a>
+    </div>
+</div>
