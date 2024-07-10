@@ -4,8 +4,15 @@
 }
 
 .container > h1 {
-    margin-bottom: 10px;
     font-weight: normal;
+}
+
+.container > h1:nth-child(1) {
+    font-weight: 600;
+}
+
+.container.light > h1 {
+    color: var(--primary-color-w);
 }
 
 .container > .description {
@@ -13,25 +20,64 @@
     margin-bottom: 5px;
 }
 
-.container > .sociais > a > img {
-    height: 25px;
-    width: 25x;
+.container.light > .description {
+    color: var(--title-color-w);
+}
+
+.container > .sociais > a > svg {
+    height: 20px;
+    width: 20x;
     margin-right: 5px;
     margin-bottom: 20px;
+    fill: var(--primary-color);
+}
+
+.container.light > .sociais > a > svg {
+    fill: var(--primary-color-w);
 }
 
 .container > button {
     background-color: transparent;
     color: var(--primary-color);
-    padding: 10px;
+    padding: 15px;
     border: 2px solid var(--border-color);
-    border-radius: 20px;
+    border-radius: 25px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
 }
 
-.container > button > img {
+.container > button:hover {
+    background-color: var(--border-color);
+    cursor: pointer;
+}
+
+.container.light > button {
+    color: var(--primary-color-w);
+    border: 1px solid var(--title-color-w);
+}
+
+.container.light > button:hover {
+    background-color: var(--link-color-w);
+    color: var(--primary-color);
+}
+
+.container.light > button:hover > #arrow {
+    fill: var(--primary-color);
+    stroke: var(--primary-color);
+}
+
+.container > button > #arrow {
     width: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
+    fill: var(--primary-color);
+}
+
+.container.light > button > #arrow {
+    fill: var(--primary-color-w);
+    stroke: var(--primary-color-w);
 }
 
 .container > .image-base {

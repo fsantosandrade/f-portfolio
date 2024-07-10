@@ -1,0 +1,81 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--primary-bg-color);
+}
+
+.container.light {
+    background-color: var(--primary-bg-color-w);
+}
+
+.container > .options {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    border-top: 1px solid var(--title-color);
+}
+
+.container.light > .options {
+    border-top: 1px solid var(--title-color-w);
+}
+
+.container > .options > li {
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-color);
+    transition: all .5s;
+}
+
+.container.light > .options > li {
+    color: var(--link-color-w);
+}
+
+.container > .options > li:hover {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.container.light > .options > li:hover {
+    background-color: var(--secondary-bg-color-w);
+    color: var(--primary-color-w);
+    cursor: pointer;
+}
+
+.container > .options > li > span {
+    font-size: 15px;
+}
+
+.container > .options > li > svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--title-color);
+}
+
+.container.light > .options > li > svg {
+    fill: var(--link-color-w);
+}
+
+.container > .options > li.activate {
+    color: var(--primary-color);
+}
+
+.container.light > .options > li.activate {
+    color: var(--primary-color-w);
+    font-weight: 600;
+}
+
+.container > .options > li.activate > svg {
+    fill: var(--primary-color);
+}
+
+.container.light > .options > li.activate > svg {
+    fill: var(--primary-color-w);
+}

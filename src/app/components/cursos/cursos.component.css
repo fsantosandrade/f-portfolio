@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 10px;
+    color: var(--primary-color);
+}
+
+.container.light {
+    color: var(--primary-color-w);
+}
+
+.container > .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--secondary-bg-color);
+    padding: 20px 10px;
+    transition: all .5s;
+}
+
+.container.light > .name {
+    border: 1px solid var(--secondary-bg-color-w);
+}
+
+.container > .name.active {
+    background-color: var(--secondary-bg-color);
+    border: none;
+}
+
+.container.light > .name.active {
+    background-color: var(--secondary-bg-color-w);
+}
+
+.container > .name > h2 {
+    font-size: 20px;
+}
+
+.container > .name > button {
+    background-color: transparent;
+    border: none;
+    transition: all .5s;
+}
+
+.container > .name > button > svg {
+    width: 15px;
+    height: 10px;
+    color: var(--primary-color);
+}
+
+.container.light > .name > button > svg {
+    color: var(--primary-color-w);
+}
+
+.container > .name > button.open {
+    transform: rotateZ(180deg);
+}
+
+.container > .curso {
+    border: 1px solid var(--secondary-bg-color);
+    border-top: none;
+    padding: 10px;
+    color: var(--title-color);
+}
+
+.container.light > .curso {
+    border: 1px solid var(--secondary-bg-color-w);
+    color: var(--title-color-w);
+    font-weight: normal;
+}
+
+.container > .curso > .name-curso {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.container.light > .curso > .name-curso {
+    color: var(--primary-color-w);
+    font-weight: 600;
+}
+
+.container > .curso > .data {
+    color: var(--primary-color);
+}
+
+.container.light > .curso > .data {
+    color: var(--primary-color-w);
+    font-weight: 600;
+}
+
+.container > .curso > .horas {
+    display: block;
+    color: var(--primary-color);
+}
+
+.container.light > .curso > .horas {
+    color: var(--primary-color-w);
+    font-weight: 600;
+}
+
+.container > .curso > h3 {
+    margin: 10px 0;
+    font-weight: 100;
+}

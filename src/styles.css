@@ -9,6 +9,16 @@
     --title-color: #9A9A9C;
     --link-color: #9A9A9C;
     --icon-color: #C7C8C9;
+
+    --primary-color-w: #0B0B0F;
+    
+    --primary-bg-color-w: #E9E9E9;
+    --secondary-bg-color-w: #C7C8C9;
+    --border-color-w: #C7C8C9;
+
+    --title-color-w: #0B0B0F;
+    --link-color-w: #28292E;
+    --icon-color-w: #56575A;
 }
 
 * {
@@ -17,8 +27,13 @@
     border: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: var(--primary-bg-color);
+}
+
+body.light {
+    background-color: var(--primary-bg-color-w);
 }

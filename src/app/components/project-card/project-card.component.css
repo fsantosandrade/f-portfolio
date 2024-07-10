@@ -15,9 +15,17 @@
     font-weight: normal;
 }
 
+.container.light > .title, .container.light > p {
+    color: var(--primary-color-w);
+}
+
 .container > .caracteristicas {
     color: var(--title-color);
     margin: 25px 0;
+}
+
+.container.light > .caracteristicas {
+    color: var(--title-color-w);
 }
 
 .container > .tecnologias {
@@ -32,10 +40,23 @@
     border-radius: 50%;
     padding: 15px;  
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--title-color);
 }
 
-.container > .tecnologias > li > img {
-    width: 100%;
+.container > .tecnologias > li {
+    fill: var(--link-color-w);
+}
+
+.container.light > .tecnologias > li {
+    border: 1px solid var(--link-color-w);
+}
+
+.container > .tecnologias > li > svg {
+    width: 20px;
+    fill: var(--primary-color);
 }
 
 .container > .options {
@@ -51,18 +72,42 @@
     font-size: 15px;
 }
 
+.container.light > .options > a {
+    color: var(--primary-color-w);
+}
+
 .container > .options > .previa {
     width: 60%;
     border: 1px solid var(--title-color);
-    padding: 10px;
+    padding: 12px 10px;
     border-radius: 20px;
     text-align: center;
     transition: background-color .5s;
 }
 
+.container.light > .options > .previa {
+    border: 1px solid var(--title-color-w);
+}
+
+.container > .options > .previa > svg {
+    width: 10px;
+    margin-left: 10px;
+    fill: var(--primary-color);
+}
+
+.container.light > .options > .previa > svg {
+    fill: var(--pimary-color-w);
+    stroke: var(--primary-color-w);
+}
+
 .container > .options > .previa:hover {
     background-color: var(--title-color);
     cursor: pointer;
+}
+
+.container.light > .options > .previa:hover {
+    background-color: var(--link-color-w);
+    color: var(--primary-color);
 }
 
 .container > .options > .repositorio {

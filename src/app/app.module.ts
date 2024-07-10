@@ -7,6 +7,10 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { MainComponent } from './components/main/main.component';
 import { HabilidadesPrincipaisComponent } from './components/habilidades-principais/habilidades-principais.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { SobreComponent } from './components/sobre/sobre.component';
+import { FormacaoComponent } from './components/formacao/formacao.component';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     MenuBarComponent,
     MainComponent,
     HabilidadesPrincipaisComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    SobreComponent,
+    FormacaoComponent,
+    CursosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    color: var(--primary-color);
+    font-weight: normal;
+    margin: 35px 10px;
+}
+
+.container.light {
+    color: var(--primary-color-w);
+}
+
+.container > h1 {
+    margin: 15px 0;
+    font-weight: 100;
+}
+
+.container > p {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.container > .data {
+    margin: 0 0 10px 0;
+}
+
+.container > .formacao {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container > .formacao > svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.container.light > .formacao > svg {
+    color: var(--title-color-w);
+}

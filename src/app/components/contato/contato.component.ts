@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
-  selector: 'app-habilidades-principais',
-  templateUrl: './habilidades-principais.component.html',
-  styleUrls: ['./habilidades-principais.component.css']
+  selector: 'app-contato',
+  templateUrl: './contato.component.html',
+  styleUrls: ['./contato.component.css']
 })
-export class HabilidadesPrincipaisComponent implements OnInit {
-  tema: string = '';
+export class ContatoComponent implements OnInit {
+  tema:string = ''
 
   constructor(private themeService: ThemaService) { }
 

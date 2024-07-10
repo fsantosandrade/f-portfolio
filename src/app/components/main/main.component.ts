@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
   selector: 'app-main',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+  tema:string = ''
 
-  constructor() { }
+  constructor(private themeService: ThemaService) { }
 
   ngOnInit(): void {
+    this.themeService.tema$.subscribe(theme => {
+      this.tema = theme
+    })
   }
 
 }

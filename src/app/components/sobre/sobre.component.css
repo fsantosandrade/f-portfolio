@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+.container.light {
+    color: var(--primary-color-w);
+}
+
+.container > .perfil > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.container > .sobre > h1 {
+    text-align: center;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.container > .sobre > p {
+    text-align: justify;
+    text-indent: 20px;
+    font-weight: 100;
+    margin: 10px 0 35px 0;
+}
+
+.container.light > .sobre > p {
+    font-weight: normal;
+}
+
+.container > .sobre > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 15px;
+    width: 60%;
+    border: 1px solid var(--title-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color .5s;
+}
+
+.container.light > .sobre > a {
+    color: var(--primary-color-w);
+    border: 1px solid var(--title-color-w);
+}
+
+.container > .sobre > a > svg {
+    width: 10px;
+    margin-left: 5px;
+    fill: var(--primary-color);
+}
+
+.container.light > .sobre > a > svg {
+    fill: var(--primary-color-w);
+}
+
+.container > .sobre > a:hover {
+    background-color: var(--title-color);
+    cursor: pointer;
+}
+
+.container.light > .sobre > a:hover{
+    background-color: var(--title-color-w);
+    color: var(--primary-color);
+}
+
+.container.light > .sobre > a:hover > svg {
+    fill: var(--primary-color);
+}
+
+.container > .sobre > button {
+    width: 40%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.container.light > .sobre > button {
+    color: var(--primary-color-w);
+}
+
+.container > .sobre > button:hover {
+    font-weight: bold;
+    cursor: pointer;
+}

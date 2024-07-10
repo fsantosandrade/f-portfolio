@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 10px;
+    color: var(--primary-color);
+}
+
+.container.light {
+    color: var(--primary-color-w);
+}
+
+.container > h1 {
+    font-weight: 100;
+    margin: 20px 0;
+}
+.container > p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > .sociais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container > .sociais > .github > a,
+.container > .sociais > .linkedin > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    margin: 0 10px;
+}
+
+.container.light > .sociais > .github > a,
+.container.light > .sociais > .linkedin > a {
+    color: var(--primary-color-w);
+}
+
+.container > .sociais > .github > a:hover,
+.container > .sociais > .linkedin > a:hover {
+    font-weight: bold;
+}
+
+.container > .sociais > .github > a > svg,
+.container > .sociais > .linkedin > a > svg {
+    width: 25px;
+    fill: var(--primary-color);
+    margin-right: 5px;
+}
+
+.container.light > .sociais > .github > a > svg,
+.container.light > .sociais > .linkedin > a > svg {
+    fill: var(--primary-color-w);
+}
+
+.container > .sociais > a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--title-color);
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 10px 0;
+    transition: all .5s;
+}
+
+.container.light > .sociais > a {
+    color: var(--primary-color-w);
+    border: 1px solid var(--title-color-w);
+}
+
+.container > .sociais > a:hover {
+    background-color: var(--title-color);
+    cursor: pointer;
+}
+
+.container.light > .sociais > a:hover {
+    background-color: var(--title-color-w);
+    color: var(--primary-color);
+}

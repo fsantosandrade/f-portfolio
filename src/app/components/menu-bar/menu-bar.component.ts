@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
   selector: 'app-menu-bar',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent implements OnInit {
+  tema:string = ''
 
-  constructor() { }
+  constructor(private themeService: ThemaService) { }
 
   ngOnInit(): void {
+    this.themeService.tema$.subscribe(theme => {
+      this.tema = theme
+    })
   }
 
 }
