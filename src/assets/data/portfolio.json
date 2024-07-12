@@ -1,7 +1,9 @@
 {
-    "title": "SOLUÇÕES CRIATIVAS & DESENVOLVIMENTO FRONT-END",
+    "titlePt1": "SOLUÇÕES CRIATIVAS &",
+    "titlePt2": "DESENVOLVIMENTO FRONT-END",
     "name": "Felipe Santos",
-    "photo": "https://github.com/fsantosandrade/portfolio/blob/main/assets/images/perfil.jpg?raw=true",
+    "photoProfile": "https://github.com/fsantosandrade/portfolio/blob/main/assets/images/perfil.jpg?raw=true",
+    "photoLogo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/logo.png?raw=true",
     "job": "Desenvolvedor Front-End",
     "location": "Valparaíso - GO",
     "phone": "(61) 9 9936-2635",

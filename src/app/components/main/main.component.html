@@ -1,8 +1,8 @@
 <div class="container" [ngClass]="tema">
-    <h1>SOLUÇÕES CRIATIVAS &</h1>
-    <h1>DESENVOLVIMENTO FRONT-END</h1>
+    <h1>{{ titlePt1 }}</h1>
+    <h1>{{ titlePt2 }}</h1>
     <p class="description" [ngClass]="tema">
-      Felipe Santos, Valparaíso-GO, Desenvolvedor Front-End.
+      {{ name }}, {{ location }}, {{ job }}.
     </p>
     <div class="sociais">
       <a href="https://github.com/fsantosandrade" target="_blank"><svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
@@ -22,6 +22,6 @@
         
     </a>
     <div class="image-base">
-      <img src="assets/images/image-base.jpg" alt="">
+      <img [src]="imageBase" alt="Imagem de Apresentação">
     </div>
 </div>

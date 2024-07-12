@@ -2,14 +2,21 @@
   <div class="menu__desk">
     <app-menu-desktop></app-menu-desktop>
   </div>
-  <img src="assets/images/logo.png" alt="logo">
+  <img [src]="photoLogo" alt="logo">
   <button (click)="changeTheme()">
     <img [src]="[photoTheme]" alt="tema">
   </button>
 </header>
 <main [ngClass]="tema">
   <section class="home">
-    <app-main></app-main>
+    <app-main
+    [titlePt1]="titlePt1"
+    [titlePt2]="titlePt2"
+    [name]="name"
+    [location]="location"
+    [job]="job"
+    [imageBase]="imageBase"
+    ></app-main>
   </section>
   <section class="habilidades-principais">
     <app-habilidades-principais></app-habilidades-principais>
