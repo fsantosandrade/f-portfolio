@@ -25,16 +25,7 @@
     width: 25%;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--title-color);
     transition: all .5s;
-}
-
-.container.light > .options > li {
-    color: var(--link-color-w);
 }
 
 .container > .options > li:hover {
@@ -49,33 +40,50 @@
     cursor: pointer;
 }
 
-.container > .options > li > span {
+.container > .options > li > a {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-color);
+}
+
+.container.light > .options > li > a {
+    color: var(--link-color-w);
+}
+
+.container > .options > li > a > span {
     font-size: 15px;
 }
 
-.container > .options > li > svg {
+.container > .options > li > a > svg {
     width: 30px;
     height: 30px;
     fill: var(--title-color);
 }
 
-.container.light > .options > li > svg {
+.container.light > .options > li > a > svg {
     fill: var(--link-color-w);
 }
 
-.container > .options > li.activate {
+.container > .options > li.activate > a,
+.container > .options > li:hover > a {
     color: var(--primary-color);
 }
 
-.container.light > .options > li.activate {
+.container.light > .options > li.activate > a,
+.container.light > .options > li:hover > a {
     color: var(--primary-color-w);
     font-weight: 600;
 }
 
-.container > .options > li.activate > svg {
+.container > .options > li.activate > a > svg,
+.container > .options > li:hover > a > svg {
     fill: var(--primary-color);
 }
 
-.container.light > .options > li.activate > svg {
+.container.light > .options > li.activate > a > svg,
+.container.light > .options > li:hover > a > svg {
     fill: var(--primary-color-w);
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ThemaService } from 'src/app/services/thema.service';
 })
 export class SobreComponent implements OnInit {
   tema: string = '';
+  @Input() idiomas:string[] = []
 
   constructor(private themeService: ThemaService) { }
 
@@ -17,4 +18,13 @@ export class SobreComponent implements OnInit {
     })
   }
 
+  downloadCurriculo(): void {
+    const file = 'assets/files/curriculo_felipe.pdf'
+    const link = document.createElement('a');
+    link.href = file;
+    link.download = 'Currículo_Felipe.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 }

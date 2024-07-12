@@ -2,16 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
-  selector: 'app-menu-bar',
-  templateUrl: './menu-bar.component.html',
-  styleUrls: ['./menu-bar.component.css']
+  selector: 'app-menu-desktop',
+  templateUrl: './menu-desktop.component.html',
+  styleUrls: ['./menu-desktop.component.css']
 })
-export class MenuBarComponent implements OnInit {
+export class MenuDesktopComponent implements OnInit {
   tema:string = ''
-  menuLinks!: NodeListOf<HTMLElement>
+  menuLinks!: NodeListOf<HTMLElement>;
 
   constructor(private themeService: ThemaService) {
-    
    }
 
   ngOnInit(): void {

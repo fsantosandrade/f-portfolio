@@ -1,0 +1,78 @@
+@media screen and (min-width: 782px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    header {
+        border-bottom: 1px solid var(--border-color);
+        margin-bottom: 45px;
+    }
+
+    header.light {
+        border-bottom: 1px solid var(--border-color-w);
+    }
+
+    header > .menu__desk {
+        display: flex;
+    }
+
+    header > button {
+        min-width: 282px;
+    }
+
+    main > .projects > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    main > .projects > a > button {
+        padding: 12px 90px;
+    }
+
+    main > aside > .formacao > h1,
+    main > aside > .cursos > h1 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        padding: 0 200px;
+    }
+    
+    main > .projects > h1 {
+        font-size: 3rem;
+        margin-bottom: 60px;
+    }
+
+    main > .projects > a > button {
+        padding: 12px 110px;
+    }
+
+    main > aside {
+        display: flex;
+        justify-content: space-between;
+        margin: 90px 200px;
+    }
+
+    main > aside > .formacao > h1,
+    main > aside > .cursos > h1 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2.5rem;
+    }
+
+    main > .contato {
+        margin: 0 200px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

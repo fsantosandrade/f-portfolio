@@ -10,11 +10,6 @@
     color: var(--primary-color-w);
 }
 
-.container > h1 {
-    margin: 15px 0;
-    font-weight: 100;
-}
-
 .container > p {
     font-weight: 600;
     margin: 5px 0;
@@ -36,4 +31,17 @@
 
 .container.light > .formacao > svg {
     color: var(--title-color-w);
+}
+
+@media screen and (min-width: 782px) {
+    .container {
+        margin: 35px 15px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 35px 0;
+    }
 }

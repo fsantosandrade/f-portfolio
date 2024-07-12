@@ -16,23 +16,47 @@
     height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.container.light > .perfil > img {
+    border: 1px solid var(--primary-color-w);
 }
 
 .container > .sobre > h1 {
     text-align: center;
-    font-weight: normal;
+    font-weight: 100;
     margin: 10px 0;
 }
 
 .container > .sobre > p {
     text-align: justify;
-    text-indent: 20px;
     font-weight: 100;
-    margin: 10px 0 35px 0;
+    margin: 10px 0 15px 0;
 }
 
 .container.light > .sobre > p {
     font-weight: normal;
+}
+
+.container > .sobre > .idiomas {
+    display: flex;
+    margin-bottom: 25px;
+    fill: var(--primary-color);
+}
+
+.container.light > .sobre > .idiomas {
+    fill: var(--primary-color-w);
+}
+
+.container > .sobre > .idiomas > ul {
+    display: flex;
+    margin-left: 10px;
+}
+
+.container > .sobre > .idiomas > ul > li {
+    margin-right: 15px;
+    font-weight: 100;
 }
 
 .container > .sobre > a {
@@ -92,4 +116,36 @@
 .container > .sobre > button:hover {
     font-weight: bold;
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 782px) {
+    .container {
+        flex-flow: row nowrap;
+        margin: 35px 15px;
+    }
+
+    .container > .perfil > img {
+        margin-right: 40px;
+    }
+
+    .container > .sobre {
+       margin-left: 40px;
+       padding: 0 15px;
+    }
+
+    .container > .sobre > h1 {
+        text-align: start;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 35px 200px;
+    }
+
+    .container > .sobre > h1 {
+        font-size: 3rem;
+    }
 }

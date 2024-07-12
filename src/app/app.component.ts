@@ -4,11 +4,10 @@ import { ThemaService } from './services/thema.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css', './app.component.media.css']
 })
 export class AppComponent implements OnInit {
   photoTheme:string = ''
-  photoLogo:string = ''
   tema: string = ''
 
   constructor(private themaService:ThemaService){}
@@ -18,7 +17,6 @@ export class AppComponent implements OnInit {
       this.tema = theme
     })
     this.photoTheme = 'assets/icons/moon.png'
-    this.photoLogo = 'assets/images/logo-w.png'
   }
 
   changeTheme() {
@@ -29,10 +27,8 @@ export class AppComponent implements OnInit {
   updatePhotoTheme() {
     if(this.tema == 'light'){
       this.photoTheme = 'assets/icons/sun.png'
-      this.photoLogo = 'assets/images/logo.png'
     }else if(this.tema == '.') {
       this.photoTheme = 'assets/icons/moon.png'
-      this.photoLogo = 'assets/images/logo-w.png'
     }
   }
 

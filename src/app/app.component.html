@@ -1,5 +1,8 @@
-<header>
-  <img [src]="[photoLogo]" alt="logo">
+<header [ngClass]="tema" id="home">
+  <div class="menu__desk">
+    <app-menu-desktop></app-menu-desktop>
+  </div>
+  <img src="assets/images/logo.png" alt="logo">
   <button (click)="changeTheme()">
     <img [src]="[photoTheme]" alt="tema">
   </button>
@@ -11,7 +14,7 @@
   <section class="habilidades-principais">
     <app-habilidades-principais></app-habilidades-principais>
   </section>
-  <section class="projects">
+  <section class="projects" id="projetos">
     <h1>Projetos</h1>
 
     <app-project-card
@@ -24,7 +27,7 @@
     linkRepos="https://github.com/fsantosandrade/projeto-spider-man"
     ></app-project-card>
 
-    <app-project-card
+    <app-project-card-reverse
     photoProject="assets/images/mockup_blog.jpg"
     nameProject="Blog Minimalist"
     descProject="Um Blog minimalista com Angular para a exibição de notícias de maneira organizada"
@@ -32,7 +35,7 @@
     [tecnologies]="['ag', 'ts', 'html', 'css']"
     linkPage="https://fsantosandrade.github.io/angular-blog/"
     linkRepos="https://github.com/fsantosandrade/angular-blog"
-    ></app-project-card>
+    ></app-project-card-reverse>
 
     <app-project-card
     photoProject="assets/images/mockup_pokedex.jpg"
@@ -43,71 +46,72 @@
     linkPage="https://fsantosandrade.github.io/pokedex/"
     linkRepos="https://github.com/fsantosandrade/pokedex"
     ></app-project-card>
+
+    <a href="https://github.com/fsantosandrade" target="_blank"><button type="button">VER TODOS OS PROJETOS</button></a>
   </section>
 
-  <section class="sobre">
-    <app-sobre></app-sobre>
+  <section class="sobre" id="sobre">
+    <app-sobre [idiomas]="['Inglês: Básico']"></app-sobre>
   </section>
 
-  <section class="formacao">
-    <app-formacao></app-formacao>
-  </section>
+  <aside>
+    <section class="formacao">
+      <h1>FORMAÇÃO</h1>
+      <app-formacao></app-formacao>
+    </section>
+    <section class="cursos">
+      <h1>CURSOS</h1>
+      <app-cursos
+      name="HTML5 e CSS3"
+      nameInstituicao="Curso em Vídeo"
+      dataInicio="02/2024"
+      dataFim="..."
+      horas="200"
+      [habilitys]="['Fundamentos HTML', 'Estruturação de documento HTML', 'Estrutura de tags e suas funções', 'Aprendizado sobre CSS3', 'Conceitos avançados']"
+      ></app-cursos>
+      <app-cursos
+      name="JavaScript"
+      nameInstituicao="Curso em Vídeo"
+      dataInicio="12/2023"
+      dataFim="02/2024"
+      horas="40"
+      [habilitys]="['Lógica de Programação', 'Estrutura da Linguagem', 'Conceitos básicos']"
+      ></app-cursos>
+      <app-cursos
+      name="JavaScript Developer"
+      nameInstituicao="DIO"
+      dataInicio="03/2024"
+      dataFim="05/2024"
+      horas="40"
+      [habilitys]="['Lógica de Programação', 'JavaScript para Web', 'Estrutura e entendimento da linguagem', 'Projetos', 'Conceitos avançados']"
+      ></app-cursos>
+      <app-cursos
+      name="Angular Developer"
+      nameInstituicao="DIO"
+      dataInicio="04/2024"
+      dataFim="06/2024"
+      horas="40"
+      [habilitys]="['Prática em TypeScript', 'Fundamentos Front-End Componentizado', 'Single Page Aplication', 'Aplicações Inteligentes', 'Fluxos', 'Projetos']"
+      ></app-cursos>
+      <app-cursos
+      name="Tecnologia da Informação e Comunicação"
+      nameInstituicao="SENAI"
+      dataInicio="10/2023"
+      dataFim="12/2023"
+      horas="14"
+      [habilitys]="['Hardware e Software', 'Segurança Web', 'Cabeamento e Redes']"
+      ></app-cursos>
+    </section>
+  </aside>
 
-  <section class="cursos">
-    <h1>CURSOS</h1>
-
-    <app-cursos
-    name="HTML5 e CSS3"
-    nameInstituicao="Curso em Vídeo"
-    dataInicio="02/2024"
-    dataFim="..."
-    horas="200"
-    [habilitys]="['Fundamentos HTML', 'Estruturação de documento HTML', 'Estrutura de tags e suas funções', 'Aprendizado sobre CSS3', 'Conceitos avançados']"
-    ></app-cursos>
-
-    <app-cursos
-    name="JavaScript"
-    nameInstituicao="Curso em Vídeo"
-    dataInicio="12/2023"
-    dataFim="02/2024"
-    horas="40"
-    [habilitys]="['Lógica de Programação', 'Estrutura da Linguagem', 'Conceitos básicos']"
-    ></app-cursos>
-
-    <app-cursos
-    name="JavaScript Developer"
-    nameInstituicao="DIO"
-    dataInicio="03/2024"
-    dataFim="05/2024"
-    horas="40"
-    [habilitys]="['Lógica de Programação', 'JavaScript para Web', 'Estrutura e entendimento da linguagem', 'Projetos', 'Conceitos avançados']"
-    ></app-cursos>
-
-    <app-cursos
-    name="Angular Developer"
-    nameInstituicao="DIO"
-    dataInicio="04/2024"
-    dataFim="06/2024"
-    horas="40"
-    [habilitys]="['Prática em TypeScript', 'Fundamentos Front-End Componentizado', 'Single Page Aplication', 'Aplicações Inteligentes', 'Fluxos', 'Projetos']"
-    ></app-cursos>
-
-    <app-cursos
-    name="Tecnologia da Informação e Comunicação"
-    nameInstituicao="SENAI"
-    dataInicio="10/2023"
-    dataFim="12/2023"
-    horas="14"
-    [habilitys]="['Hardware e Software', 'Segurança Web', 'Cabeamento e Redes']"
-    ></app-cursos>
-  </section>
-
-  <section class="contato">
+  <section class="contato" id="contato">
     <app-contato></app-contato>
   </section>
 </main>
 <footer [ngClass]="tema">
-  <p>2024. Todos os Direitos Reservados. Felipe Santos. Desenvolvido por Felipe Santos.</p>
+  <p>&copy; 2024. Todos os Direitos Reservados. Felipe Santos. Desenvolvido por Felipe Santos.</p>
 </footer>
-<app-menu-bar></app-menu-bar>
+<div class="menu-mobile">
+  <app-menu-bar></app-menu-bar>
+</div>
 <router-outlet></router-outlet>

@@ -23,7 +23,13 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
     margin-bottom: 15px;
+}
+
+header > .menu__desk {
+    display: none;
 }
 
 header > img,
@@ -31,6 +37,10 @@ header > button > img {
     width: 50px;
     height: 50px;
     margin: 10px;
+}
+
+header.light > img {
+    filter: invert(1);
 }
 
 header > button {
@@ -46,23 +56,65 @@ main > .projects {
 
 main > .projects > h1 {
     color: var(--primary-color);
-    font-size: 35px;
+    font-size: 2.5rem;
     font-weight: lighter;
-    margin-bottom: 20px;
+    margin: 30px 0;
 }
 
 main.light > .projects > h1 {
     color: var(--primary-color-w);
 }
 
-main > .cursos > h1 {
+main > .projects > a > button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--title-color);
+    padding: 12px 50px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color .5s;
+}
+
+main > .projects > a > button:hover {
+    background-color: var(--title-color);
+    cursor: pointer;
+}
+
+main.light > .projects > a > button {
+    color: var(--primary-color-w);
+    border: 1px solid var(--title-color-w);
+}
+
+main.light > .projects > a > button:hover {
+    background-color: var(--link-color-w);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+main > aside {
+    margin-top: 60px;
+}
+
+main > aside > .formacao > h1 {
     color: var(--primary-color);
     font-size: 25px;
     font-weight: lighter;
     margin: 0 10px 20px 10px;
 }
 
-main.light > .cursos > h1 {
+main.light > aside > .formacao > h1 {
+    color: var(--primary-color-w);
+}
+
+main > aside > .cursos > h1 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0 10px 20px 10px;
+}
+
+main.light > aside > .cursos > h1 {
     color: var(--primary-color-w);
 }
 
@@ -71,6 +123,7 @@ footer {
     padding: 20px;
     color: var(--title-color);
     padding-bottom: 80px;
+    text-align: center;
 }
 
 footer.light {

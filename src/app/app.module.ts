@@ -11,6 +11,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { FormacaoComponent } from './components/formacao/formacao.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { MenuDesktopComponent } from './components/menu-desktop/menu-desktop.component';
+import { ProjectCardReverseComponent } from './components/project-card-reverse/project-card-reverse.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ContatoComponent } from './components/contato/contato.component';
     SobreComponent,
     FormacaoComponent,
     CursosComponent,
-    ContatoComponent
+    ContatoComponent,
+    MenuDesktopComponent,
+    ProjectCardReverseComponent
   ],
   imports: [
     BrowserModule,
