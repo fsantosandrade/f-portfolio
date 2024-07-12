@@ -27,36 +27,36 @@
     <h1>Projetos</h1>
 
     <app-project-card
-    photoProject="assets/images/mockup_spider.jpg"
-    nameProject="Streaming of Movies"
-    descProject="Streaming interativo dos filmes dos diferentes 'Spider-Mans'"
-    [caracProject]="['Carrossel Interativo', 'Navegabilidade', 'Animações 3D']"
-    [tecnologies]="['js', 'html', 'css']"
-    linkPage="https://fsantosandrade.github.io/projeto-spider-man/"
-    linkRepos="https://github.com/fsantosandrade/projeto-spider-man"
+    [photoProject]="photoProject"
+    [nameProject]="nameProject"
+    [descProject]="descProject"
+    [caracProject]="caracProject"
+    [tecnologies]="tecnologiesProj"
+    [linkPage]="linkPage"
+    [linkRepos]="linkRepos"
     ></app-project-card>
 
     <app-project-card-reverse
-    photoProject="assets/images/mockup_blog.jpg"
-    nameProject="Blog Minimalist"
-    descProject="Um Blog minimalista com Angular para a exibição de notícias de maneira organizada"
-    [caracProject]="['Responsividade', 'Alternância de temas dark e light', 'Paginas secundárias dinâmicas', 'Informações dinâmicas']"
-    [tecnologies]="['ag', 'ts', 'html', 'css']"
-    linkPage="https://fsantosandrade.github.io/angular-blog/"
-    linkRepos="https://github.com/fsantosandrade/angular-blog"
+    [photoProject]="photoProjectR"
+    [nameProject]="nameProjectR"
+    [descProject]="descProjectR"
+    [caracProject]="caracProjectR"
+    [tecnologies]="tecnologiesProjR"
+    [linkPage]="linkPageR"
+    [linkRepos]="linkReposR"
     ></app-project-card-reverse>
 
     <app-project-card
-    photoProject="assets/images/mockup_pokedex.jpg"
-    nameProject="Pokemons List"
-    descProject="Uma lista de pokemons integrada com a PokeAPI"
-    [caracProject]="['Controle de Paginação', 'Integrada a PokeAPI', 'Responsividade']"
-    [tecnologies]="['js', 'html', 'css']"
-    linkPage="https://fsantosandrade.github.io/pokedex/"
-    linkRepos="https://github.com/fsantosandrade/pokedex"
+    [photoProject]="photoProject2"
+    [nameProject]="nameProject2"
+    [descProject]="descProject2"
+    [caracProject]="caracProject2"
+    [tecnologies]="tecnologiesProj2"
+    [linkPage]="linkPage2"
+    [linkRepos]="linkRepos2"
     ></app-project-card>
 
-    <a href="https://github.com/fsantosandrade" target="_blank"><button type="button">VER TODOS OS PROJETOS</button></a>
+    <a [href]="linkedin" target="_blank"><button type="button">VER TODOS OS PROJETOS</button></a>
   </section>
 
   <section class="sobre" id="sobre">
