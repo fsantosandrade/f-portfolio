@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemaService } from './services/thema.service';
 import { DataService } from './services/data.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 
 @Component({
@@ -22,7 +23,10 @@ export class AppComponent implements OnInit {
   job:string = 'Loading...'
   imageBase:string = 'Loading...'
 
-  constructor(private themaService:ThemaService, private dataService:DataService){}
+  //habilidades
+  tecnologies: SafeHtml[] = []
+
+  constructor(private themaService:ThemaService, private dataService:DataService, private sanitizer: DomSanitizer){}
 
   ngOnInit(): void {
     this.themaService.tema$.subscribe(theme => {
@@ -43,6 +47,11 @@ export class AppComponent implements OnInit {
       this.location = this.data.location
       this.job = this.data.job
       this.imageBase = this.data.apresentation
+
+      //habilidades
+      this.data.tecnologies.forEach((tec: any) => {
+        this.tecnologies.push(this.sanitizer.bypassSecurityTrustHtml(tec.image))
+      })
     })
 
     this.photoTheme = 'assets/icons/moon.png'

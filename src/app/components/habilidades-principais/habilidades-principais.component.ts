@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ThemaService } from 'src/app/services/thema.service';
+import { SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-habilidades-principais',
@@ -8,6 +9,7 @@ import { ThemaService } from 'src/app/services/thema.service';
 })
 export class HabilidadesPrincipaisComponent implements OnInit {
   tema: string = '';
+  @Input() tecnologies: SafeHtml[] = []
 
   constructor(private themeService: ThemaService) { }
 

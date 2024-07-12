@@ -4,10 +4,12 @@
     padding: 0 10px;
     padding-top: 100px;
     padding-bottom: 30px;
+    fill: var(--title-color);
 }
 
 .container.light {
     background-color: var(--secondary-bg-color-w);
+    fill: var(--link-color-w);
 }
 
 .container > h1 {
@@ -38,16 +40,6 @@
 
 .container.light > .skills > li {
     border: 1px solid var(--link-color-w);
-}
-
-.container > .skills > li > svg {
-    width: 100%;
-    height: 100%;
-    fill: var(--title-color);
-}
-
-.container.light > .skills > li > svg {
-    fill: var(--link-color-w);
 }
 
 @media screen and (min-width: 782px) {
