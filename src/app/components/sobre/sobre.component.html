@@ -1,10 +1,10 @@
 <div class="container" [ngClass]="tema">
     <div class="perfil">
-        <img src="assets/images/profile.jpg" alt="">
+        <img [src]="photo" alt="">
     </div>
     <div class="sobre">
         <h1>SOBRE MIM</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut inventore quidem aliquam ea tempore eveniet consequuntur minima. Dolore nihil sunt placeat voluptas temporibus nemo nisi dolor libero obcaecati numquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quaerat vitae a tenetur provident iusto eum facere alias, maiores quod tempora repellendus, voluptas vero explicabo reprehenderit beatae itaque dolorum debitis.</p>
+        <p>{{ description }}</p>
 
         <div class="idiomas">
             <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
             </ul>
         </div>
 
-        <a href="https://www.linkedin.com/in/felipe-santos-a377ba300?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtXRCXjrfTbKQSAqnJVASxQ%3D%3D" target="_blank">CONECTE-SE COMIGO 
+        <a [href]="conect" target="_blank">CONECTE-SE COMIGO 
             <svg class="filled-icon" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.950088 12.4777C0.762573 12.2902 0.657228 12.0358 0.657228 11.7706C0.657228 11.5055 0.762573 11.2511 0.950088 11.0636L9.14171 2.872L3.07117 2.87341C2.80565 2.87341 2.551 2.76793 2.36325 2.58018C2.1755 2.39243 2.07002 2.13778 2.07002 1.87226C2.07002 1.60674 2.1755 1.35209 2.36325 1.16434C2.551 0.976586 2.80565 0.871108 3.07117 0.871107L11.5555 0.871108C11.687 0.870941 11.8173 0.896724 11.9388 0.946979C12.0604 0.997232 12.1708 1.07097 12.2638 1.16397C12.3568 1.25697 12.4305 1.3674 12.4808 1.48894C12.531 1.61048 12.5568 1.74074 12.5567 1.87226L12.5567 10.3566C12.5567 10.6221 12.4512 10.8768 12.2634 11.0645C12.0757 11.2523 11.821 11.3577 11.5555 11.3577C11.29 11.3577 11.0353 11.2523 10.8476 11.0645C10.6598 10.8768 10.5544 10.6221 10.5544 10.3566L10.5558 4.28605L2.36414 12.4777C2.17663 12.6652 1.9223 12.7705 1.65712 12.7705C1.39193 12.7705 1.1376 12.6652 0.950088 12.4777Z"/>
               </svg>

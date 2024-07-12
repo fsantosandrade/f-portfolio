@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
 
   //card projeto 1
   photoProject:string = ''
-  nameProject:string = ''
-  descProject:string = ''
+  nameProject:string = 'Loading...'
+  descProject:string = 'Loading...'
   caracProject:string[] = []
   tecnologiesProj:string[] = ['js', 'html', 'css']
   linkPage:string = ''
@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
 
   //card projeto reverse
   photoProjectR:string = ''
-  nameProjectR:string = ''
-  descProjectR:string = ''
+  nameProjectR:string = 'Loading...'
+  descProjectR:string = 'Loading...'
   caracProjectR:string[] = []
   tecnologiesProjR:string[] = ['ag', 'ts', 'html', 'css']
   linkPageR:string = ''
@@ -49,12 +49,22 @@ export class AppComponent implements OnInit {
 
   //card projeto 2
   photoProject2:string = ''
-  nameProject2:string = ''
-  descProject2:string = ''
+  nameProject2:string = 'Loading...'
+  descProject2:string = 'Loading...'
   caracProject2:string[] = []
   tecnologiesProj2:string[] = ['js', 'html', 'css']
   linkPage2:string = ''
   linkRepos2:string = ''
+
+  //sobre
+  photoProfile:string = ''
+  description:string = 'Loading...'
+
+  //formacao
+  formacao:string = 'Loading...'
+  dataInici:string = 'Loading...'
+  dataFim:string = 'Loading...'
+  instituicao:string = 'Loading...'
 
   constructor(private themaService:ThemaService, private dataService:DataService, private sanitizer: DomSanitizer){
     this.dataService.getData().subscribe(dado => {
@@ -120,6 +130,16 @@ export class AppComponent implements OnInit {
 
       this.linkPage2 = projeto2.previa
       this.linkRepos2 = projeto2.repositorio
+
+      //sobre
+      this.photoProfile = this.data.photoProfile
+      this.description = this.data.description
+
+      //formacao
+      this.formacao = this.data.formacao.name
+      this.dataInici = this.data.formacao.dataInicio
+      this.dataFim = this.data.formacao.dataFim
+      this.instituicao = this.data.formacao.instituicao
     })
   }
 

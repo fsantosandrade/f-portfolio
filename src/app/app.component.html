@@ -60,13 +60,23 @@
   </section>
 
   <section class="sobre" id="sobre">
-    <app-sobre [idiomas]="['Inglês: Básico']"></app-sobre>
+    <app-sobre 
+    [photo]="photoProfile"
+    [description]="description"
+    [idiomas]="['Inglês: Básico']"
+    [conect]="linkedin"
+    ></app-sobre>
   </section>
 
   <aside>
     <section class="formacao">
       <h1>FORMAÇÃO</h1>
-      <app-formacao></app-formacao>
+      <app-formacao
+      [formacao]="formacao"
+      [dataInic]="dataInici"
+      [dataFim]="dataFim"
+      [instituicao]="instituicao"
+      ></app-formacao>
     </section>
     <section class="cursos">
       <h1>CURSOS</h1>

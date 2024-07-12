@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ThemaService } from 'src/app/services/thema.service';
 
 @Component({
@@ -8,6 +8,10 @@ import { ThemaService } from 'src/app/services/thema.service';
 })
 export class FormacaoComponent implements OnInit {
   tema: string = '';
+  @Input() formacao:string = ''
+  @Input() dataInic:string = ''
+  @Input() dataFim:string = ''
+  @Input() instituicao:string = ''
 
   constructor(private themeService: ThemaService) { }
 

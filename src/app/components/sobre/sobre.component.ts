@@ -8,7 +8,10 @@ import { ThemaService } from 'src/app/services/thema.service';
 })
 export class SobreComponent implements OnInit {
   tema: string = '';
+  @Input() photo = ''
+  @Input() description = ''
   @Input() idiomas:string[] = []
+  @Input() conect = ''
 
   constructor(private themeService: ThemaService) { }
 
