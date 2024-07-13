@@ -78,57 +78,31 @@
       [instituicao]="instituicao"
       ></app-formacao>
     </section>
+
     <section class="cursos">
       <h1>CURSOS</h1>
-      <app-cursos
-      name="HTML5 e CSS3"
-      nameInstituicao="Curso em Vídeo"
-      dataInicio="02/2024"
-      dataFim="..."
-      horas="200"
-      [habilitys]="['Fundamentos HTML', 'Estruturação de documento HTML', 'Estrutura de tags e suas funções', 'Aprendizado sobre CSS3', 'Conceitos avançados']"
-      ></app-cursos>
-      <app-cursos
-      name="JavaScript"
-      nameInstituicao="Curso em Vídeo"
-      dataInicio="12/2023"
-      dataFim="02/2024"
-      horas="40"
-      [habilitys]="['Lógica de Programação', 'Estrutura da Linguagem', 'Conceitos básicos']"
-      ></app-cursos>
-      <app-cursos
-      name="JavaScript Developer"
-      nameInstituicao="DIO"
-      dataInicio="03/2024"
-      dataFim="05/2024"
-      horas="40"
-      [habilitys]="['Lógica de Programação', 'JavaScript para Web', 'Estrutura e entendimento da linguagem', 'Projetos', 'Conceitos avançados']"
-      ></app-cursos>
-      <app-cursos
-      name="Angular Developer"
-      nameInstituicao="DIO"
-      dataInicio="04/2024"
-      dataFim="06/2024"
-      horas="40"
-      [habilitys]="['Prática em TypeScript', 'Fundamentos Front-End Componentizado', 'Single Page Aplication', 'Aplicações Inteligentes', 'Fluxos', 'Projetos']"
-      ></app-cursos>
-      <app-cursos
-      name="Tecnologia da Informação e Comunicação"
-      nameInstituicao="SENAI"
-      dataInicio="10/2023"
-      dataFim="12/2023"
-      horas="14"
-      [habilitys]="['Hardware e Software', 'Segurança Web', 'Cabeamento e Redes']"
+      <app-cursos *ngFor="let c of curso"
+      [name]="c.nomeCurso"
+      [nameInstituicao]="c.instituicaoCurso"
+      [dataInicio]="c.dataInicCurso"
+      [dataFim]="c.dataFimCurso"
+      [horas]="c.horasCurso"
+      [habilitys]="c.habilidadesCurso"
       ></app-cursos>
     </section>
   </aside>
 
   <section class="contato" id="contato">
-    <app-contato></app-contato>
+    <app-contato
+    [github]="github"
+    [linkedin]="linkedin"
+    [phone]="phone"
+    [email]="email"
+    ></app-contato>
   </section>
 </main>
 <footer [ngClass]="tema">
-  <p>&copy; 2024. Todos os Direitos Reservados. Felipe Santos. Desenvolvido por Felipe Santos.</p>
+  <p>&copy; 2024. Todos os Direitos Reservados. {{ name }}. Desenvolvido por {{ name }}.</p>
 </footer>
 <div class="menu-mobile">
   <app-menu-bar></app-menu-bar>

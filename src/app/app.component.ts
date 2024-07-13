@@ -66,6 +66,13 @@ export class AppComponent implements OnInit {
   dataFim:string = 'Loading...'
   instituicao:string = 'Loading...'
 
+  //cursos
+  curso: any[] = [] 
+
+  //contato
+  phone:string = 'Loading...'
+  email:string = 'Loading...'
+
   constructor(private themaService:ThemaService, private dataService:DataService, private sanitizer: DomSanitizer){
     this.dataService.getData().subscribe(dado => {
       this.data = dado
@@ -140,6 +147,39 @@ export class AppComponent implements OnInit {
       this.dataInici = this.data.formacao.dataInicio
       this.dataFim = this.data.formacao.dataFim
       this.instituicao = this.data.formacao.instituicao
+
+      //cursos
+      this.data.Cursos.forEach((curso: any, index: number) => {
+        if (!this.curso[index]) {
+          this.curso[index] = {
+            nomeCurso: 'Loading...',
+            instituicaoCurso: 'Loading...',
+            dataInicCurso: 'Loading...',
+            dataFimCurso: 'Loading...',
+            horasCurso: 'Loading...',
+            habilidadesCurso: []
+          };
+        }
+      
+        let cursoAtual = this.curso[index];
+        cursoAtual.nomeCurso = curso.name;
+        cursoAtual.instituicaoCurso = curso.instituicao;
+        cursoAtual.dataInicCurso = curso.dataInicio;
+        cursoAtual.dataFimCurso = curso.dataFim;
+        cursoAtual.horasCurso = curso.horas;
+
+        if (!cursoAtual.habilidadesCurso) {
+          cursoAtual.habilidadesCurso = [];
+        }
+        
+        curso.habilidades.forEach((hab: any, i: number) => {
+          cursoAtual.habilidadesCurso[i] = hab.habilidade;
+        });
+      })  
+
+      //contato
+      this.phone = this.data.phone
+      this.email = this.data.email
     })
   }
 
