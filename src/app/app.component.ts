@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
   nameProject:string = 'Loading...'
   descProject:string = 'Loading...'
   caracProject:string[] = []
-  tecnologiesProj:string[] = ['js', 'html', 'css']
+  tecnologiesProj:string[] = ['Ag', 'Ts', 'html', 'css']
   linkPage:string = ''
   linkRepos:string = ''
 
