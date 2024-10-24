@@ -3,6 +3,7 @@
     "titlePt2": "DESENVOLVIMENTO FRONT-END",
     "name": "Felipe Santos",
     "photoProfile": "https://github.com/fsantosandrade/portfolio/blob/main/assets/images/perfil.jpg?raw=true",
+    "curriculo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/files/curriculo_felipe.pdf",
     "photoLogo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/logo.png?raw=true",
     "job": "Desenvolvedor Front-End",
     "location": "Valparaíso - GO",
@@ -37,21 +38,23 @@
     "portfolio": [
       {
         "id": 1,
-        "name": "Streaming of Movies",
-        "description": "Streaming interativo dos filmes dos diferentes 'Homem-Aranha'",
-        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_spider.jpg?raw=true",
+        "name": "E-commerce Layout",
+        "description": "Um layout e-commerce de livros tematizado e interativo",
+        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_e-commerce.jpg?raw=true",
         "caracteristicas": [
-            {"caracteristica": "Carrossel Interativo"},
+            {"caracteristica": "Mecanismo de pesquisa"},
             {"caracteristica": "Navegabilidade"},
-            {"caracteristica": "Animações 3D"}
+            {"caracteristica": "Informações dinâmicas"},
+            {"caracteristica": "Funções e-commerce"}
         ],
         "tecnologies": [
-            {"image": "Js"},
+            {"image": "Ag"},
+            {"image": "Ts"},
             {"image": "Html"},
             {"image": "Css"}
         ],
-        "previa": "https://fsantosandrade.github.io/projeto-spider-man/",
-        "repositorio": "https://github.com/fsantosandrade/projeto-spider-man" 
+        "previa": "https://fsantosandrade.github.io/Capa-a-Capa/",
+        "repositorio": "https://github.com/fsantosandrade/Capa-a-Capa" 
       },
       {
         "id": 2,
@@ -75,21 +78,22 @@
       },
       {
         "id": 3,
-        "name": "Pokemons List",
-        "description": "Uma lista de pokemons integrada com a PokeAPI",
-        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_pokedex.jpg?raw=true",
+        "name": "Informative Website",
+        "description": "Um layout de site informativo feito com Angular para uma atividade avaliativa proposta pela UDF.",
+        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_informative.jpg?raw=true",
         "caracteristicas": [
-            {"caracteristica": "Controle de Paginação"},
-            {"caracteristica": "Integrada a PokeAPI"},
-            {"caracteristica": "Responsividade"}
+            {"caracteristica": "Design limpo e intuitivo"},
+            {"caracteristica": "Navegabilidade"},
+            {"caracteristica": "Animações e interatividade"}
         ],
         "tecnologies": [
-            {"image": "Js"},
+            {"image": "Ag"},
+            {"image": "Ts"},
             {"image": "Html"},
             {"image": "Css"}
         ],
-        "previa": "https://fsantosandrade.github.io/pokedex/",
-        "repositorio": "https://github.com/fsantosandrade/pokedex" 
+        "previa": "https://fsantosandrade.github.io/Paradigma_de_Eventos/",
+        "repositorio": "https://github.com/fsantosandrade/Paradigma_de_Eventos" 
       }
     ],
     "formacao": {
@@ -152,6 +156,30 @@
                 {"id": 4, "habilidade": "Aplicações Inteligentes"},
                 {"id": 5, "habilidade": "Fluxos"},
                 {"id": 6, "habilidade": "Projetos"}
+            ]
+        },
+        {
+            "name": "Bootcamp Front-End com Angular",
+            "instituicao": "DIO",
+            "dataInicio": "06/2024",
+            "dataFim": "08/2024",
+            "horas": "68",
+            "habilidades": [
+                {"id": 1, "habilidade": "Versionamento de Código"},
+                {"id": 2, "habilidade": "Aprofundamento em Angular"},
+                {"id": 3, "habilidade": "Aprofundamento em Typescript"}
+            ]
+        },
+        {
+            "name": "Formação Node.Js",
+            "instituicao": "DIO",
+            "dataInicio": "08/2024",
+            "dataFim": "09/2024",
+            "horas": "30",
+            "habilidades": [
+                {"id": 1, "habilidade": "Práticas de Typescript no Node.Js"},
+                {"id": 2, "habilidade": "Aprendizado sobre APIs"},
+                {"id": 3, "habilidade": "Estruturação e boas práticas"}
             ]
         },
         {
