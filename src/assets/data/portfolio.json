@@ -77,21 +77,22 @@
       },
       {
         "id": 3,
-        "name": "Streaming of Movies",
-        "description": "Streaming interativo dos filmes dos diferentes 'Homem-Aranha'",
-        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_spider.jpg?raw=true",
+        "name": "Informative Website",
+        "description": "Um layout de site informativo feito com Angular para uma atividade avaliativa proposta pela UDF.",
+        "photo": "https://github.com/fsantosandrade/f-portfolio/blob/main/src/assets/images/mockup_informative.jpg?raw=true",
         "caracteristicas": [
-            {"caracteristica": "Carrossel Interativo"},
+            {"caracteristica": "Design limpo e intuitivo"},
             {"caracteristica": "Navegabilidade"},
-            {"caracteristica": "Animações 3D"}
+            {"caracteristica": "Animações e interatividade"}
         ],
         "tecnologies": [
-            {"image": "Js"},
+            {"image": "Ag"},
+            {"image": "Ts"},
             {"image": "Html"},
             {"image": "Css"}
         ],
-        "previa": "https://fsantosandrade.github.io/projeto-spider-man/",
-        "repositorio": "https://github.com/fsantosandrade/projeto-spider-man" 
+        "previa": "https://fsantosandrade.github.io/Paradigma_de_Eventos/",
+        "repositorio": "https://github.com/fsantosandrade/Paradigma_de_Eventos" 
       }
     ],
     "formacao": {
@@ -154,6 +155,30 @@
                 {"id": 4, "habilidade": "Aplicações Inteligentes"},
                 {"id": 5, "habilidade": "Fluxos"},
                 {"id": 6, "habilidade": "Projetos"}
+            ]
+        },
+        {
+            "name": "Bootcamp Front-End com Angular",
+            "instituicao": "DIO",
+            "dataInicio": "06/2024",
+            "dataFim": "08/2024",
+            "horas": "68",
+            "habilidades": [
+                {"id": 1, "habilidade": "Versionamento de Código"},
+                {"id": 2, "habilidade": "Aprofundamento em Angular"},
+                {"id": 3, "habilidade": "Aprofundamento em Typescript"}
+            ]
+        },
+        {
+            "name": "Formação Node.Js",
+            "instituicao": "DIO",
+            "dataInicio": "08/2024",
+            "dataFim": "09/2024",
+            "horas": "30",
+            "habilidades": [
+                {"id": 1, "habilidade": "Práticas de Typescript no Node.Js"},
+                {"id": 2, "habilidade": "Aprendizado sobre APIs"},
+                {"id": 3, "habilidade": "Estruturação e boas práticas"}
             ]
         },
         {
