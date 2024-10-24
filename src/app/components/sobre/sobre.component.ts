@@ -23,12 +23,26 @@ export class SobreComponent implements OnInit {
   }
 
   downloadCurriculo(): void {
-    const file = this.curriculo
-    const link = document.createElement('a');
-    link.href = file;
-    link.download = 'Currículo_Felipe.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+    const fileUrl = this.curriculo;
+    console.log('File URL:', fileUrl);
+    fetch(fileUrl, { mode: 'cors' }) // Adicionando modo CORS
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        console.log('Fetch response:', response);
+        return response.blob();
+      })
+      .then(blob => {
+        console.log('Blob criado:', blob);
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'Currículo_Felipe.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      })
+      .catch(error => console.error('Erro ao baixar o arquivo:', error));
+  }  
+  
 }
