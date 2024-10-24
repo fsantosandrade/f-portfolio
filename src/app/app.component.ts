@@ -52,13 +52,14 @@ export class AppComponent implements OnInit {
   nameProject2:string = 'Loading...'
   descProject2:string = 'Loading...'
   caracProject2:string[] = []
-  tecnologiesProj2:string[] = ['js', 'html', 'css']
+  tecnologiesProj2:string[] = ['ag', 'ts', 'html', 'css']
   linkPage2:string = ''
   linkRepos2:string = ''
 
   //sobre
   photoProfile:string = ''
   description:string = 'Loading...'
+  curriculo: string = ''
 
   //formacao
   formacao:string = 'Loading...'
@@ -141,6 +142,7 @@ export class AppComponent implements OnInit {
       //sobre
       this.photoProfile = this.data.photoProfile
       this.description = this.data.description
+      this.curriculo = this.data.curriculo
 
       //formacao
       this.formacao = this.data.formacao.name

@@ -12,6 +12,7 @@ export class SobreComponent implements OnInit {
   @Input() description = ''
   @Input() idiomas:string[] = []
   @Input() conect = ''
+  @Input() curriculo = ''
 
   constructor(private themeService: ThemaService) { }
 
@@ -22,7 +23,7 @@ export class SobreComponent implements OnInit {
   }
 
   downloadCurriculo(): void {
-    const file = 'assets/files/curriculo_felipe.pdf'
+    const file = this.curriculo
     const link = document.createElement('a');
     link.href = file;
     link.download = 'Currículo_Felipe.pdf';
